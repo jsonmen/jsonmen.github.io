@@ -1,0 +1,230 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+    -webkit-box-shadow: -2px 2px 25px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: -2px 2px 25px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: -2px 2px 25px 0px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+    display: inline-flex;
+    max-width: 100%;
+}
+
+.face-img {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border: 3px solid red;
+    border-radius: 50%;
+}
+
+.header-block {
+    max-width: 100%;
+    display: flex;
+    max-height: 200px;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.name {
+    align-self: flex-start;
+    font-size: 40px;
+    justify-self: center;
+    margin: 5px 20px;
+}
+
+.who-his {
+    font-size: 20px;
+    margin: 5px 20px;
+}
+
+.address {
+    font-size: 15px;
+    margin: 0px 20px;
+}
+
+.body {
+    margin: 30px 0px;
+}
+
+.left-side {
+
+    border-left: 2px solid rgb(82, 82, 180);
+    float: right;
+    width: 300px;
+}
+
+.social-info {
+    margin: 10px;
+    display: block;
+}
+
+.name-block {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.social {
+    padding: 5px 20px;
+
+}
+
+.social span {
+    font-size: 16px;
+}
+
+.social li {
+    list-style-type: none;
+    line-height: 20px;
+    margin: 5px 0;
+}
+
+.what-language {
+    display: block;
+    margin: 10px;
+}
+
+.language {
+    padding: 5px 40px;
+}
+
+.language li {
+    list-style-type: square;
+    line-height: 20px;
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.what-know {
+    display: block;
+    margin: 10px;
+}
+
+.know {
+    padding: 5px 40px;
+}
+
+.know li {
+    list-style-type: square;
+    line-height: 20px;
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.right-side {
+    margin: 10px;
+}
+
+.where-works {
+    margin: 15px 0;
+}
+
+.where-works li {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.companies {
+    padding: 5px 40px;
+}
+
+.companies li {
+    list-style-type: square;
+    line-height: 20px;
+}
+
+.where-styding {
+    margin: 15px 0;
+}
+
+.where-styding li {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.styding {
+    padding: 5px 40px;
+}
+
+.styding li {
+    list-style-type: square;
+    line-height: 20px;
+}
+
+.bhobby {
+    margin: 10px 0;
+}
+
+.hobby {
+    list-style-type: square;
+    padding: 5px 40px;
+}
+
+.hobby li {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.about {}
+
+.about div {
+    padding: 5px 30px;
+}
+
+.about div span {
+    font-size: 18px;
+}
+
+.ps {
+    font-weight: 400;
+    font-size: 15px;
+    font-style: italic;
+    padding: 5px 10px;
+}
+
+@media (max-width: 1400px) {
+    .container {
+        max-width: 1200px;
+    }
+
+}
+
+@media (max-width: 1199px) {
+    .container {
+        max-width: 992px;
+    }
+}
+
+@media (max-width: 990px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media (max-width: 760px) {
+    .container {
+        max-width: 576px;
+    }
+
+    .left-side {
+        float: none;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 570px) {
+    .container {
+        max-width: none;
+    }
+}
