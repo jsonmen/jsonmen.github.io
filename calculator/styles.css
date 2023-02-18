@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;                                     
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(23,0,255);
+    background-image: linear-gradient(-45deg, rgba(23,0,255,1) 5%, rgba(109,8,220,1) 21%, rgba(145,24,145,1) 55%, rgba(228,46,45,1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+    display: block;
+    width: 300px;
+    height: 100%;
+    margin: 0 auto;
+}
+.calc {
+    display: block;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid transparent;
+    border-radius: 12px;
+    min-height: auto;
+    padding: 10px;
+}
+.calc-input-block {
+    height: 20%;
+    width: 100%;
+}
+/* Error Color: rgba(228, 47, 47, 0.8);*/
+.calc-input {
+    height: 70px;
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
+    line-height: 45px;
+    font-size: 2rem;
+    text-align: right;
+    margin-bottom: 7px;
+    outline: none !important;
+    padding: 0 7px;
+}
+.calc-button-block {
+    height: 80%;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "clear-all scopes backspace div"
+                   "seven eight nine mul"
+                   "four five six sub"
+                   "one two tree plus"
+                   "zero zero point eval";
+    grid-gap: 7px;
+    justify-content: center;
+}
+.calc-button {
+    background-color: rgba(255, 255, 255, .8);
+    color: #000000;
+    height: 65px;
+    width: 65px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    font-size: 20px;
+    transition: .3s;
+}
+.calc-button.zero {
+    grid-area: zero;
+    width: 100%;
+    border-radius: 34px;
+}
+.calc-button:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
