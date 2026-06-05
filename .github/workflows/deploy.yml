@@ -22,7 +22,6 @@ env:
 jobs:
   build:
     name: Build Astro
-    runs-size: ubuntu-latest
     runs-on: ubuntu-latest
     steps:
       - name: Checkout your repository
