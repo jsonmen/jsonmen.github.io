@@ -2,14 +2,23 @@
 
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
-import { defineConfig, fontProviders, passthroughImageService } from 'astro/config'; // Added passthroughImageService helper
+import { defineConfig, fontProviders, passthroughImageService } from 'astro/config';
+import { unified } from '@astrojs/markdown-remark'; // Import unified
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 
 // https://astro.build/config
 export default defineConfig({
     site: 'https://jsonmen.github.io', 
-    integrations: [mdx(), sitemap()],
+    integrations: [mdx(), sitemap()], // Kept clean; MDX inherits from markdown.processor
+    markdown: {
+        processor: unified({
+            remarkPlugins: [remarkMath],
+            rehypePlugins: [rehypeKatex],
+        })
+    },
     image: {
-        service: passthroughImageService() // Clean built-in fallback config
+        service: passthroughImageService() 
     },
     fonts: [
         {
